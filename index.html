@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
     <header>
         <a href="#" class="logo"><span>Portofolio</span></a>
@@ -19,46 +20,66 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#portfolio">Project</a></li>
+            <li><a href="#certificate">Certificate</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
 
     <!-- Home -->
     <section class="hero" id="home">
-        <div class="main-content" data-aos="fade-in">
-            <h4>Halo!</h4>
-            <h1>I'm <span>Satriya</span></h1>
-            <p>Seorang siswa SMK yang sedang mempelajari pengembangan perangkat lunak dan berusaha meningkatkan kemampuan pemrograman melalui pembelajaran dan pengembangan project.</p>
+        <div class="hero-container">
 
-            <div class="social">
-                <a href="https://github.com/mochamad-satriya-alham" target="_blank"><i class="ri-github-fill"></i></a>
-                <a href="https://www.instagram.com/striyaya/" target="_blank"><i class="ri-instagram-fill"></i></a>
-                <a href="https://www.linkedin.com/in/satriya-alham-02ab8a341/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+            <!-- LEFT -->
+            <div class="main-content" data-aos="fade-right">
+                <h4>Halo!</h4>
+                <h1>I'm <span class="typing"></span></h1>
+                <p>
+                    Seorang siswa SMK yang sedang mempelajari pengembangan perangkat lunak
+                    dan berusaha meningkatkan kemampuan pemrograman melalui pembelajaran dan pengembangan project.
+                </p>
+
+                <div class="social">
+                    <a href="https://github.com/mochamad-satriya-alham" target="_blank"><i
+                            class="ri-github-fill"></i></a>
+                    <a href="https://www.instagram.com/striyaya/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/satriya-alham-02ab8a341/" target="_blank"><i
+                            class="ri-linkedin-fill"></i></a>
+                </div>
+
+                <div class="main-btn">
+                    <a href="https://wa.me/6287878909659" target="_blank" class="btn">Contact Me</a>
+                    <a href="mailto:satriyaalham@gmail.com" target="_blank" class="btn btn2">Email</a>
+                </div>
             </div>
 
-            <div class="main-btn">
-                <a href="https://wa.me/6287878909659" target="_blank" class="btn">Contact Me</a>
-                <a href="mailto:satriyaalham@gmail.com" target="_blank" class="btn btn2">Email</a>
+            <div class="hero-globe" data-aos="fade-left">
+                <div class="globe">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
             </div>
+
         </div>
     </section>
 
     <!-- ABOUT -->
     <section class="about" id="about">
-        <div class="about-img" data-aos="zoom-in-down">
-            <img src="asset/me.png">
-        </div>
-        <div class="about-text" data-aos="zoom-in-up">
-            <h2>I am <span>Fronted</span>
-            </h2>
-            <p style="margin-bottom: 25px; color: var(--other-color); line-height: 30px;">
-                Saya adalah siswa SMK Wikrama Bogor jurusan PPLG dengan minat pada pengembangan frontend. 
-                Saya berpengalaman membuat tampilan antarmuka aplikasi web menggunakan Laravel (Blade) 
+        <div class="about-text-card" data-aos="zoom-in-up">
+            <h2>I am <span>Frontend Developer</span></h2>
+            <p>
+                Saya adalah siswa SMK Wikrama Bogor jurusan PPLG dengan minat pada pengembangan frontend.
+                Saya berpengalaman membuat tampilan antarmuka aplikasi web menggunakan Laravel (Blade)
                 serta memiliki pemahaman dasar dalam pembuatan UI yang rapi dan responsif.
             </p>
-            <a href="https://github.com/mochamad-satriya-alham?tab=repositories" target="_blank" class="btn">View All
-                Projects</a>
+            <a href="https://github.com/mochamad-satriya-alham?tab=repositories" target="_blank" class="btn">
+                View All Projects
+            </a>
+        </div>
+
+        <div class="about-img" data-aos="zoom-in-down">
+            <img src="asset/me.png" alt="Foto Satriya">
         </div>
     </section>
 
@@ -89,10 +110,10 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO -->
+    <!-- Project -->
     <section class="portfolio" id="portfolio">
         <div class="center-text" data-aos="fade-down">
-            <h2>My <span>Portfolio</span></h2>
+            <h2>My <span>Project</span></h2>
         </div>
 
         <div class="Portfolio-content" data-aos="zoom-in-up">
@@ -155,6 +176,94 @@
         </div>
     </section>
 
+
+    <!-- CERTIFICATE -->
+<section class="certificate" id="certificate">
+    <div class="center-text" data-aos="fade-down">
+        <h2>My <span>Certificate</span></h2>
+    </div>
+
+    <div class="certificate-content" data-aos="zoom-in-up">
+
+        <!-- Item 1 -->
+        <div class="cert-row">
+            <img src="asset/sertifikat/CertificatePKL.png" alt="Certificate 1">
+            <div class="cert-layer">
+                <h5>Certificate PKL</h5>
+                <p>Telah menyelesaikan PKL selama 6 bulan</p>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cert-row">
+            <img src="asset/sertifikat/dicodingFront.png" alt="Certificate 2">
+            <div class="cert-layer">
+                <h5>Certificate Dicoding</h5>
+                <p>Front-end Web untuk Pemula</p>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="cert-row">
+            <img src="asset/sertifikat/dicodingJS.png" alt="Certificate 3">
+            <div class="cert-layer">
+                <h5>Certificate Dicoding</h5>
+                <p>Back-end Pemula untuk Javascript</p>
+            </div>
+        </div>
+
+         <!-- Item 4 -->
+        <div class="cert-row">
+            <img src="asset/sertifikat/AWS.png" alt="Certificate 3">
+            <div class="cert-layer">
+                <h5>Certificate Dicoding</h5>
+                <p>Dasar Cloud dan Gen AI di AWS</p>
+            </div>
+        </div>
+
+        <div class="cert-row">
+            <img src="asset/sertifikat/dasarprograman.png" alt="Certificate 3">
+            <div class="cert-layer">
+                <h5>Certificate Dicoding</h5>
+                <p>Dasar pemrograman untuk menjadi pengembangan software</p>
+            </div>
+        </div>
+
+        <div class="cert-row">
+            <img src="asset/sertifikat/dasarprograman.png" alt="Certificate 3">
+            <div class="cert-layer">
+                <h5>Certificate Dicoding</h5>
+                <p>Logika pemrograman logic </p>
+            </div>
+        </div>
+
+        <div class="cert-row">
+            <img src="asset/sertifikat/dasarprograman.png" alt="Certificate 3">
+            <div class="cert-layer">
+                <h5>Certificate Dicoding</h5>
+                <p>Introduce to Financial Literacy </p>
+            </div>
+        </div>
+
+        <div class="cert-row">
+            <img src="asset/sertifikat/unity.png" alt="Certificate 3">
+            <div class="cert-layer">
+                <h5>Certificate Game</h5>
+                <p>Unity Essentials Pathway </p>
+            </div>
+        </div>
+
+        <div class="cert-row">
+            <img src="asset/sertifikat/problem.png" alt="Certificate 3">
+            <div class="cert-layer">
+                <h5>Certificate Wahdani</h5>
+                <p>problem solving & Innovation</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
     <!-- CONTACT -->
     <section class="contact" id="contact">
         <div class="center-text" data-aos="fade-down">
@@ -174,10 +283,10 @@
     <!-- FOOTER -->
     <div class="footer">
         <div class="copyright">
-            <p>© 2024 Satriya — All Rights Reserved.</p>
+            <p>© 2026 Moch Satriya Alham — All Rights Reserved.</p>
         </div>
         <a href="#home" class="scroll-top">
-            <i class=x"ri-arrow-up-s-fill"></i>
+            <i class="ri-arrow-up-s-fill"></i>
         </a>
     </div>
 
@@ -192,4 +301,5 @@
     </script>
 
 </body>
+
 </html>
