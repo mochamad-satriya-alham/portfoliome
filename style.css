@@ -260,18 +260,57 @@ header.sticky {
     font-size: var(--h2-font);
 }
 
-.services-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    align-items: center;
-    gap: 2.3rem;
-    margin-top: 4.2rem;
+.skills-wrapper {
+    margin-top: 4rem;
+    padding: 20px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skills-track {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+}
+
+.skills-track .box {
+    min-width: 260px;
+}
+
+.skills-track.left {
+    animation: slideLeft 15s linear infinite;
+}
+
+.skills-track.right {
+    animation: slideRight 15s linear infinite;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 .box {
-    padding: 80px 40px 66px;
+    padding: 35px 25px;
+    width: 260px;
+    min-height: 240px;
     background: #2d343f;
-    border-radius: 28px;
+    border-radius: 20px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px var(--main-color);
     transition: all 0.5s ease;
@@ -279,24 +318,19 @@ header.sticky {
 }
 
 .box img {
-    width: 80px;
+    width: 55px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-
 .box h3 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 8px;
 }
 
 .box p {
-    font-size: var(--p-font);
-    font-weight: 400;
-    color: var(--other-color);
-    line-height: 30px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .box a {
